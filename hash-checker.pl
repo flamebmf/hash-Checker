@@ -1,8 +1,8 @@
-#perl2exe_info FileDescription =MD5 file checker
+#perl2exe_info FileDescription =hash file checker
 #perl2exe_info FileVersion=1.2
 #perl2exe_info InternalName=md5_check
 #perl2exe_info LegalCopyright=Akulich Dmitry akulich.d@gmail.com
-#perl2exe_info ProductName=MD5 file checker
+#perl2exe_info ProductName=hash file checker
 #perl2exe_info ProductVersion=1
 use Digest::MD5;
 use Digest::SHA;
