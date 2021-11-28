@@ -83,20 +83,24 @@ foreach $tmp ( keys %input_data) {
 	if ($verbose) { print "md1=$md_1\nmd2=$md_2\n\n"; };
 	if ($md_1 eq $md_2) {
 		if ($outputfile) {
-		print FOUT "$tmp \tOK\n";
+		print FOUT "$tmp\tOK\n";
 		};
-		print "$tmp \t";
-		print color 'bold green';
-		print "OK \n";
-		print color 'reset';
+		if ($verbose) { 
+		 print "$tmp \t";
+		 print color 'bold green';
+		 print "OK \n";
+		 print color 'reset';
+		};
 	} else {
 		if ($outputfile) {
-		print FOUT "$tmp NOT OK\n";
+		print FOUT "$tmp\tNOT OK\n";
 		};
-		print "$tmp file ";
-		print color 'bold red';
-		print "NOT OK\n";
-		print color 'reset';
+		if ($verbose) { 
+		 print "$tmp\t";
+		 print color 'bold red';
+		 print "NOT OK\n";
+		 print color 'reset';
+		};
 	};
 };
 };
@@ -126,6 +130,7 @@ sub scan_file {
 	$file=~s/\\/\//g;
 	if (! open (my $fh,"$file")) {
 		#warn "Can't open '$file'";
+		
 		return 0;
 	}else {
 		binmode ($fh);
