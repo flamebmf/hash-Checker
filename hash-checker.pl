@@ -155,7 +155,7 @@ sub load_data {
 };
 sub help_out {
 print color 'bold red';
-print "\tFILE HASH CHECKER|GENERATOR\n";
+print "\tFILE HASH CHECKER|HASH GENERATOR\n";
 print color 'bold green';
 print "\t\tCopyrights\n\t\tAkulich Dmitry\n\t\t2021\n";
 print "\t Usage:\n \t-Input|input|INPUT|i|I <file with stored list:fullfilename\\thash>\n\t-Output|output|OUTPUT|o|O <report file>\n\t-Generate|G|g generate report for current dir only mode\n\t-verbose printing additional information\n\t-Hash|hash|h|H <hash type MD5|SHA> if not present MD5 will be used \n";
