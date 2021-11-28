@@ -1,6 +1,6 @@
 # hash Checker
  FILE HASH CHECKER|HASH GENERATOR;
-These are tool for verifying the identity of programs on multiple hosts.
+This is tool for verifying the identity of programs on multiple hosts.
 In first you must make a fingerprint from ideal host.
 Correct this fingerprint to fit your needs and check next hosts with it.
 You will get a report about all chused files.
