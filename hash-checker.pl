@@ -82,9 +82,9 @@ foreach $tmp ( keys %input_data) {
 	my $md_2=scan_file($tmp);
 	if ($verbose) { print "md1=$md_1\nmd2=$md_2\n\n"; };
 	if ($md_1 eq $md_2) {
-		if ($outputfile) {
-		print FOUT "$tmp\tOK\n";
-		};
+		#if ($outputfile) {
+		#print FOUT "$tmp\tOK\n";
+		#}; remove useless information from report
 		if ($verbose) { 
 		 print "$tmp \t";
 		 print color 'bold green';
