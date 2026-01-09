@@ -3,7 +3,7 @@
 This is tool for verifying the identity of programs on multiple hosts.
 In first you must make a fingerprint from ideal host.
 Correct this fingerprint to fit your needs and check next hosts with it.
-You will get a report about all chused files.
+You will get a report about all changed files.
 Usage:
 -Input|input|INPUT|i|I <file with stored list>
 -Output|output|OUTPUT|o|O <report file>
